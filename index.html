@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Brain Train</title>
+</head>
+<body>
+
+<section class="app">
+    <div class="inner">
+        <div class="modal-window" hidden>
+            <form class="checkbox"><input id="plus" type="checkbox" name="plus" checked/>Add</form>
+            <form class="checkbox"><input id="minus" type="checkbox" name="minus"/>Subtract</form>
+            <form class="checkbox"><input id="divide" type="checkbox" name="divide"/>Divide</form>
+            <form class="checkbox"><input id="multiply" type="checkbox" name="multiply"/>Multiply</form>
+            <div class="inline">
+                <form class="number">Number of tests:<input id="testCount" type="text" name="testCount" value="10"/></form>
+                <form class="number">Minimal value:<input id="minNumber" type="text" name="minNumber" value="1"/></form>
+                <form class="number">Maximal value:<input id="maxNumber" type="text" name="maxNumber" value="10"/></form>
+                <div class="apply">
+                    <button id="buttonApply" class="button" type="button">Apply</button>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="buttonSettings" class="button" type="button">Settings</button>
+            <button id="buttonGenerate" class="button" type="button" disabled>Generate test</button>
+            <button id="buttonCheck" class="button" type="button" disabled>Check test</button>
+            <button id="buttonClear" class="button" type="button">Clear</button>
+        </div>
+        <div class="tests"></div>
+    </div>
+    <div class="success" hidden>
+        <h1>Congratulations! You surely have what it takes.</h1>
+        <button type="button" id="buttonOneMoreTime" class="button">One more time</button>
+    </div>
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>

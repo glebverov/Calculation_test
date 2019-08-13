@@ -1,0 +1,82 @@
+body {
+    font-size: 16px;
+}
+
+.app {
+    border: 10px solid greenyellow;
+    border-radius: 5px;
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    position: relative;
+    margin: 0 auto;
+}
+
+.inner {
+    margin: 20px;
+}
+
+.number {
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.number input {
+    width: 50px;
+}
+
+.button {
+    padding: 5px;
+    background-color: aqua;
+    border: 2px solid greenyellow;
+    border-radius: 50%;
+}
+
+.checkbox {
+    display: inline-block;
+    padding: 5px;
+}
+
+.inline {
+    position: relative;
+    margin-top: 10px;
+}
+
+.apply {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.test {
+    max-width: 300px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.tests {
+    margin-top: 10px;
+}
+
+.success {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    background: yellow;
+    color: red;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#buttonOneMoreTime {
+    margin: 5px 0;
+}
